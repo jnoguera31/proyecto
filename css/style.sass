@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap')
 @import 'reset'
-$transparente: rgba(42, 178, 246, 0.0)
+$transparente: rgba(42, 178, 246, 0.2)
 $transparente1: rgba(42, 178, 246, 0.0)
 $transparente2: rgba(42, 178, 246, 0.1)
 
@@ -17,11 +17,13 @@ header
     
     
     nav
+        #logomi
+            display: none
         font-family: 'Oswald', sans-serif
         font-size: 20px
         display: grid
         grid-template-columns: 102px 1fr
-        background-color: $transparente
+        background-color: $transparente1
         border-bottom: 1px solid #cacaca
         padding-left: 30px
         
@@ -103,6 +105,8 @@ main
             p
              font-size: 19px
              padding-bottom: 40px
+             text-align: justify
+             margin-right: 12px
 
         
         
@@ -131,8 +135,87 @@ footer
             
           
      
-         
-             
+@media  (max-width: 375px) /* Medida celular vertical*/ 
+    header
+        background-size: 550px
+        nav
+            
+                 
+                grid-template-columns: 120px 1fr
+                padding-left: 15px
+                ul
+                  display: inline
+                  margin-left: 50px
+
+        #logopc
+            display: none
+
+        section
+            grid-template-columns: 1fr
+            blockquote
+                display: none
+    main
+        background: none
+        padding-top: 20px
+        section
+            grid-template-columns:  1fr 
+            blockquote
+             h2
+                 text-align: center
+             p
+                 text-align: justify
+                 font-size: 18px
+                 margin-right: 12px
+
+
+    
+       
+
+@media  (max-width: 786px) /* Medida tablet vertical*/ 
+    header
+        nav
+            #logopc
+                display: none
+            ul
+                li
+                    font-size: 29px
+                    margin-left: 30px
+        section
+            p
+                background: $transparente
+
+    main
+        background: none
+        padding-top: 50px
+        section
+            grid-template-columns:  1fr 
+
+            blockquote
+                h2
+                    text-align: center
+                    font-size: 35px
+                p
+                    text-align: justify
+                    margin-right: 12px
+                    font-size: 20px
+
+                    
+
+
+
+        
+
+
+        
+
+        
+
+        
+        
+
+
+    
+
     
        
 

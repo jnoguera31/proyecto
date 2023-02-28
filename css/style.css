@@ -33,6 +33,9 @@ header nav {
   border-bottom: 1px solid #cacaca;
   padding-left: 30px;
 }
+header nav #logomi {
+  display: none;
+}
 header nav ul {
   display: inline-flex;
   align-items: center;
@@ -108,6 +111,8 @@ main section blockquote h2 {
 main section blockquote p {
   font-size: 19px;
   padding-bottom: 40px;
+  text-align: justify;
+  margin-right: 12px;
 }
 
 footer {
@@ -125,4 +130,70 @@ footer p {
   padding-left: 23px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+@media (max-width: 375px) {
+  header {
+    background-size: 550px;
+  }
+  header nav {
+    grid-template-columns: 120px 1fr;
+    padding-left: 15px;
+  }
+  header nav ul {
+    display: inline;
+    margin-left: 50px;
+  }
+  header #logopc {
+    display: none;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    display: none;
+  }
+  main {
+    background: none;
+    padding-top: 20px;
+  }
+  main section {
+    grid-template-columns: 1fr;
+  }
+  main section blockquote h2 {
+    text-align: center;
+  }
+  main section blockquote p {
+    text-align: justify;
+    font-size: 18px;
+    margin-right: 12px;
+  }
+}
+@media (max-width: 786px) {
+  header nav #logopc {
+    display: none;
+  }
+  header nav ul li {
+    font-size: 29px;
+    margin-left: 30px;
+  }
+  header section p {
+    background: rgba(42, 178, 246, 0.2);
+  }
+  main {
+    background: none;
+    padding-top: 50px;
+  }
+  main section {
+    grid-template-columns: 1fr;
+  }
+  main section blockquote h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  main section blockquote p {
+    text-align: justify;
+    margin-right: 12px;
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
