@@ -12,8 +12,10 @@ header
 
     background:  url('../img/ilustracion4.jpg') no-repeat
     background-size: 800px
+    background-position: center
+    padding-top: 15px
     
-    background-position-x: 90px
+    
     nav
         font-family: 'Oswald', sans-serif
         font-size: 20px
@@ -77,22 +79,50 @@ header
 
 
 
+main
 
+    background: url('../img/ilustracion8.png') no-repeat
+    background-size: 350px
+    background-position-x: 800px
+    background-position-y: 220px
+    padding-bottom: 80px
+
+    padding-top: 100px
+    padding-left: 25px
+    section
+        
+       
+        padding-top: 30px
+        display: grid
+        grid-template-columns:  3fr 600px
+        column-gap: 100px
+        blockquote
+            h2
+                font-family: 'PT Sans Narrow', sans-serif
+                padding-bottom: 10px
+            p
+             font-size: 19px
+             padding-bottom: 40px
+
+        
+        
+      
 
 
 
 footer
-
-    position: absolute
-    bottom: 0
-    width:  100%
     
-    background: $transparente2
+    padding-top: 10px
+    position: bottom
+    width: 100%
+    
+    background: $transparente2 
+     
    
 
     h2
          padding-left: 23px
-         padding-top: 20px
+         padding-top: 8px
          padding-bottom: 20px
     p
         padding-left: 23px
@@ -101,20 +131,8 @@ footer
             
           
      
-           
+         
              
-@media  screen and (mix-width: 500)
-    
-    header
-        nav
-            grid-template-columns:  1fr
-    
-    footer
-        background: red
-
-@media  screen and (min-width: 500)
-   footer
-        background: red 
     
        
 

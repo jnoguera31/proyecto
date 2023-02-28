@@ -21,7 +21,8 @@ body {
 header {
   background: url("../img/ilustracion4.jpg") no-repeat;
   background-size: 800px;
-  background-position-x: 90px;
+  background-position: center;
+  padding-top: 15px;
 }
 header nav {
   font-family: "Oswald", sans-serif;
@@ -84,33 +85,44 @@ header section blockquote p {
   font-size: 20px;
 }
 
+main {
+  background: url("../img/ilustracion8.png") no-repeat;
+  background-size: 350px;
+  background-position-x: 800px;
+  background-position-y: 220px;
+  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-left: 25px;
+}
+main section {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 3fr 600px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+main section blockquote h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  padding-bottom: 10px;
+}
+main section blockquote p {
+  font-size: 19px;
+  padding-bottom: 40px;
+}
+
 footer {
-  position: absolute;
-  bottom: 0;
+  padding-top: 10px;
+  position: bottom;
   width: 100%;
   background: rgba(42, 178, 246, 0.1);
 }
 footer h2 {
   padding-left: 23px;
-  padding-top: 20px;
+  padding-top: 8px;
   padding-bottom: 20px;
 }
 footer p {
   padding-left: 23px;
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-@media screen and (mix-width: 500) {
-  header nav {
-    grid-template-columns: 1fr;
-  }
-  footer {
-    background: red;
-  }
-}
-@media screen and (min-width: 500) {
-  footer {
-    background: red;
-  }
 }/*# sourceMappingURL=style.css.map */
