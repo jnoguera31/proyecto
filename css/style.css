@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+header {
+  background: url("../img/ilustracion4.jpg") no-repeat;
+  background-size: 800px;
+  background-position-x: 90px;
+}
+header nav {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 102px 1fr;
+  background-color: rgba(42, 178, 246, 0);
+  border-bottom: 1px solid #cacaca;
+  padding-left: 30px;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 45px;
+}
+header nav ul li {
+  margin-left: 45px;
+  color: #000;
+  text-shadow: 3px -1px rgba(12, 198, 255, 0.974);
+}
+header section {
+  display: grid;
+  grid-template-columns: 2fr 300px;
+  padding: 50px;
+  padding-left: 25px;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+header section form {
+  background: rgba(42, 178, 246, 0);
+}
+header section form input, header section form button {
+  display: block;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: 92%;
+}
+header section form button {
+  padding: 15px;
+  font-family: "PT Sans Narrow", sans-seriffont;
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+header section blockquote h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 45px;
+}
+header section blockquote p {
+  font-size: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(42, 178, 246, 0.1);
+}
+footer h2 {
+  padding-left: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  padding-left: 23px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media screen and (mix-width: 500) {
+  header nav {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    background: red;
+  }
+}
+@media screen and (min-width: 500) {
+  footer {
+    background: red;
+  }
+}/*# sourceMappingURL=style.css.map */

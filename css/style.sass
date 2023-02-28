@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=PT+Sans+Narrow:wght@700&display=swap')
+@import 'reset'
+$transparente: rgba(42, 178, 246, 0.0)
+$transparente1: rgba(42, 178, 246, 0.0)
+$transparente2: rgba(42, 178, 246, 0.1)
+
+body
+    background-color:#fff
+    height: 100vh
+header
+
+    background:  url('../img/ilustracion4.jpg') no-repeat
+    background-size: 800px
+    
+    background-position-x: 90px
+    nav
+        font-family: 'Oswald', sans-serif
+        font-size: 20px
+        display: grid
+        grid-template-columns: 102px 1fr
+        background-color: $transparente
+        border-bottom: 1px solid #cacaca
+        padding-left: 30px
+        
+        
+      
+
+        ul
+            display: inline-flex
+            align-items: center
+            justify-content: flex-end
+            padding-right: 45px
+
+            li
+                margin-left: 45px
+                color: #000
+                text-shadow: 3px -1px rgba(12, 198, 255, 0.974)
+
+    section
+
+        
+        display: grid
+        grid-template-columns: 2fr 300px
+        padding: 50px 
+        padding-left: 25px
+        column-gap: 70px
+        
+        form
+            background: $transparente1
+            input, button
+                display: block
+                
+                margin-bottom: 20px
+                
+            input 
+                padding: 10px
+                width: 92%
+            button
+                padding: 15px
+                font-family: 'PT Sans Narrow', sans-seriffont
+                font-size: 20px
+                width: 100%
+                cursor: pointer
+            a 
+                display: block
+                text-align: center
+                font-family: 'PT Sans Narrow', sans-serif
+                font-size: 18px
+                color: #000
+        blockquote
+            h1
+                font-family: 'PT Sans Narrow', sans-serif
+                font-size: 45px
+            p
+                font-size: 20px
+
+
+
+
+
+
+
+footer
+
+    position: absolute
+    bottom: 0
+    width:  100%
+    
+    background: $transparente2
+   
+
+    h2
+         padding-left: 23px
+         padding-top: 20px
+         padding-bottom: 20px
+    p
+        padding-left: 23px
+        padding-top: 8px
+        padding-bottom: 8px
+            
+          
+     
+           
+             
+@media  screen and (mix-width: 500)
+    
+    header
+        nav
+            grid-template-columns:  1fr
+    
+    footer
+        background: red
+
+@media  screen and (min-width: 500)
+   footer
+        background: red 
+    
+       
+
